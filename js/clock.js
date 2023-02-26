@@ -1,17 +1,24 @@
-let Name = prompt("Adınız:")
-let myClock = document.querySelector('#myClock')
-if(Name === ""){
-    alert("İsminizi Girmediniz")
-}
-else{
-    document.querySelector('#myName').innerHTML= Name;
-}
-function currentTime(){
-    let date = new Date();
-    let gunler =["Pazar","Pazartesi", "Salı","Çarşamba","Perşembe","Cuma","Cumartesi"]
-    myClock.innerHTML = `
-    ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()} ${gunler[date.getDay()]} 
-`
+let yourName = prompt("Adınız:");
+let myClock = document.querySelector("#myClock");
+let date = new Date();
+let gunler = [
+  "Pazar",
+  "Pazartesi",
+  "Salı",
+  "Çarşamba",
+  "Perşembe",
+  "Cuma",
+  "Cumartesi",
+];
+if (yourName === "" || yourName === " ") alert("İsminizi Girmediniz");
+else document.querySelector("#myName").innerHTML = yourName;
+
+function currentTime() {
+  myClock.innerHTML = `
+    ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()} ${
+    gunler[date.getDay()]
+  } 
+`;
 }
 
 currentTime();

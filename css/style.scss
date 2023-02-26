@@ -1,13 +1,13 @@
-$tablet:768px;
-$mobile-s:425px;
-.text-center{
-    color: rgb(243, 158, 61);
-    font-size: 30px;
-    letter-spacing: 3px;
-    img{
-        margin-top: 60px;
-    }
-    @media(max-width: $mobile-s){
-        font-size: 20px;
-    }
+$tablet: 768px;
+$mobile-s: 425px;
+.text-center {
+  color: rgb(243, 158, 61);
+  font-size: 30px;
+  letter-spacing: 3px;
+  img {
+    margin-top: 60px;
+  }
+  @media (max-width: $mobile-s) {
+    font-size: 20px;
+  }
 }
