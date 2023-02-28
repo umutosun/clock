@@ -1,9 +1,9 @@
 let yourName = prompt("Adınız:");
 let myClock = document.querySelector("#myClock");
-let begin = document.querySelector(".text-center");
+let textCenter = document.querySelector(".text-center");
 if (yourName === "" || yourName === " ") {
   alert("isim girmediniz");
-  begin.style.display = "none";
+  textCenter.style.display = "none";
 } else {
   document.querySelector("#myName").innerHTML = yourName;
 }
